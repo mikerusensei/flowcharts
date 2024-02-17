@@ -5,7 +5,7 @@
 
 def count_consecutive(string:str):
     result = []
-    consecutive_count = 1
+    consecutive_count = 0
     queue = list(string)
 
     previous = queue.pop(0)
@@ -17,16 +17,16 @@ def count_consecutive(string:str):
         if previous == next:
             consecutive_count += 1
         else:
-            if consecutive_count > 1:
-                result.append([i - consecutive_count + 1, i])
+            if consecutive_count > 0:
+                result.append([i - consecutive_count, i])
             
-            consecutive_count = 1
+            consecutive_count = 0
 
         previous = next
         i += 1
 
-    if consecutive_count > 1:
-        result.append([i - consecutive_count + 1, i])
+    if consecutive_count > 0:
+        result.append([i - consecutive_count, i])
 
     return result
 

@@ -1,4 +1,4 @@
-# Function 101
+# Function 101 __[Consecutive Characters]__
 
 Create a function that wound return the index of consecutive characters in a string.
 Use `Queue Data Structures` 

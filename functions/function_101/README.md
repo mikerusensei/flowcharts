@@ -26,10 +26,10 @@ Use `Queue Data Structures`
        re_assign["previous = next"]
        add_i["i += 1"]
        check_inside{"if consecutive_count > 0"}
-       append_inside["result.append([i - consecutive_count + 1, i])"]
+       append_inside["result.append([i - consecutive_count, i])"]
        reset_con_count["consecutive_count = 0"]
        check_outside{"if consecutive_count > 0"}
-       append_outside["result.append([i - consecutive_count + 1, i])"]
+       append_outside["result.append([i - consecutive_count, i])"]
        return_result["return result"]
        terminate([End])
    

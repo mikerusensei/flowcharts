@@ -15,7 +15,7 @@ Use `Queue Data Structures`
        start([Start])
        string[/string/]
        result["result = []"]
-       con_count["consecutive_count = 1"]
+       con_count["consecutive_count = 0"]
        list_str["queue = List(string)"]
        previous["previous = queue.pop(0)"]
        iterator["i = 0"]
@@ -25,10 +25,10 @@ Use `Queue Data Structures`
        add_con_count["consecutive_count += 1"]
        re_assign["previous = next"]
        add_i["i += 1"]
-       check_inside{"if consecutive_count > 1"}
+       check_inside{"if consecutive_count > 0"}
        append_inside["result.append([i - consecutive_count + 1, i])"]
-       reset_con_count["consecutive_count = 1"]
-       check_outside{"if consecutive_count > 1"}
+       reset_con_count["consecutive_count = 0"]
+       check_outside{"if consecutive_count > 0"}
        append_outside["result.append([i - consecutive_count + 1, i])"]
        return_result["return result"]
        terminate([End])

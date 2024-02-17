@@ -1,4 +1,4 @@
-# Problem 66 Plus One
+# Problem 66 - Plus One
 
 Problem Link -> <https://leetcode.com/problems/plus-one/description/>
 

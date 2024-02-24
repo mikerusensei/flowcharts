@@ -50,4 +50,4 @@ The program must treat the `numbers` `as numbers` `not as string.`
         for_j -- False --> for_i
         for_i -- False --> negative
         negative --> terminate
-    ```
+```

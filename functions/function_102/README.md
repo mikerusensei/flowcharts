@@ -46,7 +46,7 @@ The program must treat the `numbers` `as numbers` `not as string.`
         for_j -- True --> if
         if -- True --> return
         return --> terminate
-        if -- False --> for_i
+        if -- False --> for_J
         for_j -- False --> for_i
         for_i -- False --> negative
         negative --> terminate

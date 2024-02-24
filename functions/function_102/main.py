@@ -1,5 +1,5 @@
 def find_sum(array):
-    converted_array = []
+    added_array = []
 
     for num in array:
         digit_sum = 0
@@ -8,11 +8,11 @@ def find_sum(array):
             digit_sum += digit
             num //= 10
         
-        converted_array.append(digit_sum)
+        added_array.append(digit_sum)
 
-    for i in range(len(converted_array)):
-        for j in range(i+1, len(converted_array)):
-            if converted_array[i] == converted_array[j]:
+    for i in range(len(added_array)):
+        for j in range(i+1, len(added_array)):
+            if added_array[i] == added_array[j]:
                 return (i, j)
     
     return (-1, -1)
